@@ -1,0 +1,17 @@
+
+body{
+  Background-color:#EFEAD8;
+}
+ul{
+  list-style-type: none;
+  padding:2px 225px;
+}
+hr{
+  border-style:dotted none none;
+  width:5%;
+  border-width: 4px;
+  border-color: grey;
+}
+h1,h2{
+  color:#FF5F00;
+}
