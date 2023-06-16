@@ -6,30 +6,76 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/png">
   </head>
+  
+  <style>
+    .contact-details, .mydetails {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        min-width: 48%;
+        margin: 0.8rem auto;
+        padding: 0.1rem;
+        border: 2px solid #bebebe;
+        border-radius: 0.8rem;
+    }
+    .mydetails h4, 
+    .mydetails p,
+    .contact-details input,
+    .contact-details textarea,
+    .contact-details label,
+    .contact-details button[type="submit"]{
+        margin: 0.8rem 0.5rem 0.1rem;
+    }
+    .contact-details input,
+    .contact-details textarea,
+    .contact-details label{
+        padding: 0.1rem;
+        outline: .1rem 0.5rem 0.1rem #c8f8a1;
+        font-family: inherit;
+    }
+    .details-container{
+        position: relative;
+        display: flex;
+        margin: 3.6rem auto;
+        width: calc(100% - 500px);
+    }
+
+   .contact-details button[type="submit"]{
+       margin-bottom: 0.3rem;
+       border-radius: 0.3rem;
+       border: #bebebe 2px solid;
+       background-color: antiquewhite;
+       color:#333;
+       cursor: pointer;
+   }
+   .contact-details button[type*="submit"]:hover{
+       margin-bottom: 0.3rem;
+       border-radius: 0.3rem;
+       border: #2e550e 2px solid;
+       background-color: #c8f8a1;
+       color:#fff;
+       cursor: pointer;
+   }
+  </style>
   <body>
     <h2><strong>My Contact details</strong></h2>
-    <table>
-      <tr>
-        <td>Home Adress:</td>
-        <td>47 Chrissie Street <br>
-          Brakenhurst <br> Alberton <br> 1448
-        </td>
-        <tr>
-          <td>Email address: </td> <br>
-          <td>rgraas@ymail.com / belgraasetc@gmail.com</td> <br>
-        </tr>
-        <tr>
-          <td>Phone Numbers:</td> <br>
-          <td>+27 69 180 3833 | +27 78 984 6228</td> <br>
-        </tr>
-    </table>
-    <form class="" action="index.html" method="post">
-      <label for="">Your Name: </label>
-      <input type="text" name="YourName" value=""> <br><br>
-      <label for="">Your Email Address: </label>
-      <input type="email" name="YourEmail" value="Your Email please"> <br><br>
-      <label for="">Message</label>
-      <textarea name="YourMessage" rows="8" cols="80"></textarea>
-    </form>
+    <div class="details-container">
+        <div class="mydetails">
+            <h4>Home Address</h4>
+            <p>47 Chrissie Street<br> Brakenhurst<br> Alberton<br> Johannesburg<br> 1448</p>
+            <h4>Email-Address</h4>
+            <p>rgraas@ymail.com || rgraas16@gmail.com</p>
+            <h4>Phone Numbers</h4>
+            <p>+27 69 180 3833 || +27 78 984 6228</p>
+        </div>
+        <form action="" class="contact-details">
+            <label for="fullname">Your Name:</label>
+            <input type="text" name="fullname" value="" />
+            <label for="email">Your Email-Address:</label>
+            <input type="email" name="email" id=""/>
+            <textarea name="" id="message" cols="30" rows="10" placeholder="write your message here"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
   </body>
 </html>
